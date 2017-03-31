@@ -18,9 +18,10 @@ class Game
       puts user_input
     else
       puts user_input
+      binding.pry
     end
   end
-  
+
 end
 
 # game = Game.new

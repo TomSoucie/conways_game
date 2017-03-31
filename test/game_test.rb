@@ -14,5 +14,10 @@ class GameTest < Minitest::Test
     game = Game.new
 
     game.gets_user_input #visually verify output to screen
-    end
+  end
+  
+  def test_the_user_input_is_captured
+    game = Game.new
+
+    assert_equal 
 end
