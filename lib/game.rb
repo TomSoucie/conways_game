@@ -1,29 +1,30 @@
 require 'pry'
 
 class Game
-  
+
   attr_accessor :user_input
+  
   def initialize
     @welcome = './lib/welcome_message.txt'
   end
 
   def welcome_message
     puts File.read(@welcome)
-    user_input = gets.chomp
   end
 
   def gets_user_input
-    if user_input.nil?
-      welcome_message
-      puts user_input
-    else
-      puts user_input
-      binding.pry
-    end
+    welcome_message
+    user_input = gets.chomp
+  end
+
+  def return_user_input
+    gets_user_input
+    user_input
+    # binding.pry
   end
 
 end
 
 # game = Game.new
 
-# game.display_user_input
+# game.displays_user_input

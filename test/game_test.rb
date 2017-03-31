@@ -19,5 +19,6 @@ class GameTest < Minitest::Test
   def test_the_user_input_is_captured
     game = Game.new
 
-    assert_equal 
+    assert_equal "A1 A2", game.return_user_input
+  end
 end
