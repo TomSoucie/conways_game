@@ -12,13 +12,17 @@ class Game
     user_input = gets.chomp
   end
 
-  def display_user_input
+  def gets_user_input
     if user_input.nil?
       welcome_message
       puts user_input
+    else
+      puts user_input
+    end
   end
+  
 end
 
-game = Game.new
+# game = Game.new
 
-game.display_user_input
+# game.display_user_input
